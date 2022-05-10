@@ -8,10 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MutiplesComponent } from './components/mutiples/mutiples.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { SetupComponent } from './components/setup/setup.component';
 import { GameComponent } from './components/game/game.component';
+import { WaitroomComponent } from './components/waitroom/waitroom.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -19,7 +20,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 }
 
 @NgModule({
-	declarations: [AppComponent, MutiplesComponent, SetupComponent, GameComponent],
+	declarations: [AppComponent, MutiplesComponent, SetupComponent, GameComponent, WaitroomComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
@@ -37,6 +38,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 		NbThemeModule.forRoot({ name: 'cosmic' }),
 		NbLayoutModule,
 		NbEvaIconsModule,
+		NbButtonModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
