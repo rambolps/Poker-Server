@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MutiplesComponent } from './components/mutiples/mutiples.component';
+
+import { SetupComponent } from './components/setup/setup.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: MutiplesComponent,
+    path: '', component: SetupComponent
   },
 ];
 
