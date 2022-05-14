@@ -39,6 +39,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 		NbLayoutModule,
 		NbEvaIconsModule,
 		NbButtonModule,
+
 	],
 	providers: [],
 	bootstrap: [AppComponent],
